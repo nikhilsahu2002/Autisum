@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Chronology from "../Components/Chronology";
+import { Link } from "react-router-dom";
 
 export default function MriTest() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
+  const [showDialog, setShowDialog] = useState(false);
 
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
@@ -27,6 +29,8 @@ export default function MriTest() {
       );
 
       setResult(response.data.result);
+
+      setShowDialog(true);
     } catch (err) {
       setError(err.message);
     }
@@ -80,14 +84,47 @@ export default function MriTest() {
             </p>
           </div>
 
-          <img src="" className="mt-4 mx-auto max-h-40 hidden" id="preview" />
+          {selectedFile && (
+            <img
+              src={URL.createObjectURL(selectedFile)}
+              className="mt-4 mx-auto max-h-40 block"
+              id="preview"
+              alt="Selected Image"
+            />
+          )}
         </div>
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           onClick={handleSubmit}>
           Submit
         </button>
-        {result && <p className="mt-4">{result}</p>}
+
+        {showDialog && (
+          <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-800 bg-opacity-50">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="flex justify-center">
+                <img
+                  src="src\assets\201203_Portrait_Nurse.jpg"
+                  alt=""
+                  className="h-20 w-20"
+                />
+              </div>
+              {result && <p className="mt-4">{result}</p>}
+
+              <button
+                onClick={() => setShowDialog(false)}
+                className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded mr-2">
+                Close
+              </button>
+              <a
+                href="/"
+                className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
+                Check Doctors
+              </a>
+            </div>
+          </div>
+        )}
+
         {error && <p className="mt-4 text-red-500">Error: {error}</p>}
       </div>
     </div>

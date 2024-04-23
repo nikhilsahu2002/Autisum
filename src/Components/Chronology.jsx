@@ -11,7 +11,10 @@ export default function Chronology() {
           <div class="flex md:contents flex-row-reverse">
             <div class="relative p-4 my-6  text-gray-800  rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
               <h3 class="text-lg font-semibold lg:text-xl">Upload Image</h3>
-              <p class="mt-2 leading-6">Description of the first event.</p>
+              <p class="mt-2 leading-6">
+                Upload only high-resolution MRI <br /> brain images for accurate
+                testing of <br /> the autism detection system..
+              </p>
             </div>
             <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
               <div class="flex items-center justify-center w-6 h-full">
@@ -30,14 +33,21 @@ export default function Chronology() {
             </div>
             <div class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
               <h3 class="text-lg font-semibold lg:text-xl">Analysis</h3>
-              <p class="mt-2 leading-6">Description of the second event.</p>
+              <p class="mt-2 leading-6">
+                Performing analysis to identify patterns and insights <br />{" "}
+                within datasets, facilitating informed <br /> decision-making
+                and strategic planning..
+              </p>
             </div>
           </div>
 
           <div class="flex md:contents flex-row-reverse">
             <div class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
               <h3 class="text-lg font-semibold lg:text-xl">Test Result</h3>
-              <p class="mt-2 leading-6">Description of the first event.</p>
+              <p class="mt-2 leading-6">
+                Test Result: Indicates autism presence <br /> based on brain
+                image analysis..
+              </p>
             </div>
             <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
               <div class="flex items-center justify-center w-6 h-full">
@@ -58,7 +68,10 @@ export default function Chronology() {
               <h3 class="text-lg font-semibold lg:text-xl">
                 Suggestion For Consent Doctor
               </h3>
-              <p class="mt-2 leading-6">Description of the second event.</p>
+              <p class="mt-2 leading-6">
+                Suggestion for Consent: Consult a doctor <br /> for professional
+                interpretation and advice..
+              </p>
             </div>
           </div>
         </div>
