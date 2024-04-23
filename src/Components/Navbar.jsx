@@ -22,7 +22,7 @@ export const Navbar = () => {
       <header className="absolute inset-x-0 top-0 flex items-center h-20 z-40">
         <nav className="relative mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex gap-x-5 justify-between items-center">
           <div className="flex items-center min-w-max">
-            <a href="#" className="text-xl font-semibold text-gray-800 ">
+            <a href="/" className="text-xl font-semibold text-gray-800 ">
               <span className="relative after:absolute after:inset-0 after:rotate-3 after:border after:border-blue-600 text-blue-600 ">
                 Health
               </span>
@@ -41,16 +41,16 @@ export const Navbar = () => {
             <ul className="flex flex-col lg:flex-row gap-6 lg:items-center text-gray-700  lg:w-full lg:justify-center">
               <li>
                 <a
-                  href="#"
+                  href="/Test"
                   className="duration-300 ease-linear hover:text-blue-600 ">
-                  Home
+                  Dignosis
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/Blog"
                   className="duration-300 ease-linear hover:text-blue-600 ">
-                  Diagnosis
+                  Blog
                 </a>
               </li>
               <li>

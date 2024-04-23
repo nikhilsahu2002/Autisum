@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Chronology from "../Components/Chronology";
 
 export default function MriTest() {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -44,14 +45,8 @@ export default function MriTest() {
         Upload a brain MRI image for analysis or choose other image processing
         tasks:
       </p>
-      <ul className="list-disc list-inside mt-2 ml-2">
-        <li>Brain MRI image analysis</li>
-        <li>Image segmentation</li>
-        <li>Feature extraction</li>
-        <li>Image classification</li>
-        <li>Object detection</li>
-        <li>Image enhancement</li>
-      </ul>
+
+      <Chronology />
 
       <div className="max-w-md mx-auto p-6 bg-gray-100 rounded-lg shadow-md">
         <h1 className="text-2xl font-bold mb-4">Autism Detection</h1>

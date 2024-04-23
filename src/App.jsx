@@ -11,6 +11,7 @@ import MriTest from "./Pages/MriTest";
 import Blogpage from "./Pages/Blogpage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AutismQuiz from "./Components/AutismQuiz";
+import Blog from "./Pages/Blog";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/mritest" element={<MriTest />} />
           <Route path="/selfdignoses" element={<AutismQuiz />} />
-          <Route path="/Blog" element={<Blogpage />} />
+          <Route path="/Blog" element={<Blog />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
