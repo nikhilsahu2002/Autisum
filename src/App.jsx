@@ -22,6 +22,7 @@ function App() {
           <Route path="/mritest" element={<MriTest />} />
           <Route path="/selfdignoses" element={<AutismQuiz />} />
           <Route path="/Blog" element={<Blog />} />
+          <Route path="/BlogPost" element={<Blog />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
