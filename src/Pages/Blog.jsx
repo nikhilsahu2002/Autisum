@@ -21,24 +21,19 @@ export default function Blog() {
               <a
                 href="/BlogPost"
                 class="text-blue-700 text-sm font-bold uppercase pb-4">
-                Technology
+                Health Care
               </a>
               <a
                 href="/BlogPost"
                 class="text-3xl font-bold hover:text-gray-700 pb-4">
-                Lorem Ipsum Dolor Sit Amet Dolor Sit Amet
+                Early Identification and Support
               </a>
               <p href="/BlogPost" class="text-sm pb-3">
-                By{" "}
-                <a href="/BlogPost" class="font-semibold hover:text-gray-800">
-                  David Grzyb
-                </a>
-                , Published on April 25th, 2020
+                
+                Published on April 25th, 2020
               </p>
               <a href="/BlogPost" class="pb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                quis porta dui. Ut eu iaculis massa. Sed ornare ligula lacus,
-                quis iaculis dui porta volutpat. In sit amet posuere magna..
+                Early intervention is crucial for individuals with autism to reach their full potential. Recognizing the signs of autism early and providing appropriate support and therapy can make a significant difference in a person's development and quality of life. It's essential for parents, caregivers, and educators to be aware of the red flags of autism and seek professional guidance if concerns arise.
               </a>
               <a
                 href="/BlogPost"
@@ -57,24 +52,18 @@ export default function Blog() {
               <a
                 href="/BlogPost"
                 class="text-blue-700 text-sm font-bold uppercase pb-4">
-                Automotive, Finance
+                Health Care
               </a>
               <a
                 href="/BlogPost"
                 class="text-3xl font-bold hover:text-gray-700 pb-4">
-                Lorem Ipsum Dolor Sit Amet Dolor Sit Amet
+                Building a Supportive Community
               </a>
               <p href="/BlogPost" class="text-sm pb-3">
-                By{" "}
-                <a href="/BlogPost" class="font-semibold hover:text-gray-800">
-                  David Grzyb
-                </a>
-                , Published on January 12th, 2020
+                 Published on January 12th, 2020
               </p>
               <a href="/BlogPost" class="pb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                quis porta dui. Ut eu iaculis massa. Sed ornare ligula lacus,
-                quis iaculis dui porta volutpat. In sit amet posuere magna..
+                Creating inclusive spaces involves more than just awareness; it requires action and empathy. By promoting acceptance, understanding, and accommodation, we can build a supportive community where individuals with autism feel valued, respected, and included. This involves advocating for accessible environments, inclusive education, and employment opportunities that embrace neurodiversity.
               </a>
               <a
                 href="/BlogPost"
@@ -93,24 +82,19 @@ export default function Blog() {
               <a
                 href="/BlogPost"
                 class="text-blue-700 text-sm font-bold uppercase pb-4">
-                Sports
+                Health Care
               </a>
               <a
                 href="/BlogPost"
                 class="text-3xl font-bold hover:text-gray-700 pb-4">
-                Lorem Ipsum Dolor Sit Amet Dolor Sit Amet
+                 Challenging Common Misconceptions
               </a>
               <p href="/BlogPost" class="text-sm pb-3">
-                By{" "}
-                <a href="/BlogPost" class="font-semibold hover:text-gray-800">
-                  David Grzyb
-                </a>
-                , Published on October 22nd, 2019
+                
+                Published on October 22nd, 2019
               </p>
               <a href="/BlogPost" class="pb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                quis porta dui. Ut eu iaculis massa. Sed ornare ligula lacus,
-                quis iaculis dui porta volutpat. In sit amet posuere magna..
+                Misconceptions about autism abound, perpetuating stigma and misunderstanding. One common myth is that individuals with autism lack empathy. In reality, many people with autism experience and express empathy in their own unique ways. Another misconception is that autism is solely a childhood disorder. While symptoms often manifest in early childhood, autism is a lif
               </a>
               <a
                 href="/BlogPost"
