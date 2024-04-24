@@ -15,17 +15,17 @@ function FAQSection() {
     });
   };
   const questionContent = [
-    "How can I get started?",
-    "What is the pricing structure?",
-    "What kind of support do you provide?",
-    "Can I cancel my subscription anytime?",
+    "What is autism?",
+    "What are the early signs of autism?",
+    "What causes autism?",
+    "How common is autism?",
   ];
 
   const answerContent = [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-    "Sed condimentum nec metus et cursus...",
-    "Vivamus scelerisque vestibulum urna, vel fermentum felis...",
-    "Nullam at ante et libero rutrum lobortis...",
+    "Autism, or autism spectrum disorder (ASD), is a developmental disorder characterized by challenges with social skills, repetitive behaviors, speech, and nonverbal communication. It is a spectrum condition, meaning that it affects individuals differently and to varying degrees.",
+    "Early signs of autism can include limited or no eye contact, delayed speech or language skills, difficulty with social interaction, repetitive behaviors (like rocking or hand-flapping), and sensitivity to sensory stimuli.",
+    "The exact cause of autism is unknown, but it is believed to involve a combination of genetic and environmental factors. There is ongoing research in this area to better understand the causes of autism.",
+    "Autism is relatively common, with an estimated prevalence of about 1 in 54 children in the United States, according to the Centers for Disease Control and Prevention (CDC).",
   ];
 
   return (
