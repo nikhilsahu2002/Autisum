@@ -38,7 +38,7 @@ export const Navbar = () => {
                         : "translate-y-10  opacity-0 invisible lg:visible  lg:translate-y-0 lg:opacity-100"
                     }
                 `}>
-            <ul className="flex flex-col lg:flex-row gap-6 lg:items-center text-white  lg:w-full lg:justify-center">
+            <ul className="flex flex-col lg:flex-row gap-6 lg:items-center text-gray-700  lg:w-full lg:justify-center">
               <li>
                 <a
                   href="/Test"

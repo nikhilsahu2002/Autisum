@@ -14,6 +14,19 @@ function FAQSection() {
       [question]: !answersState[question],
     });
   };
+  const questionContent = [
+    "How can I get started?",
+    "What is the pricing structure?",
+    "What kind of support do you provide?",
+    "Can I cancel my subscription anytime?",
+  ];
+
+  const answerContent = [
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    "Sed condimentum nec metus et cursus...",
+    "Vivamus scelerisque vestibulum urna, vel fermentum felis...",
+    "Nullam at ante et libero rutrum lobortis...",
+  ];
 
   return (
     <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
@@ -33,7 +46,7 @@ function FAQSection() {
                 className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
                 onClick={() => toggleAnswer(`question${index}`)}>
                 <span className="flex text-lg font-semibold text-black">
-                  How can I get started?
+                  {questionContent[index - 1]}
                 </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -59,15 +72,7 @@ function FAQSection() {
                   display: answersState[`question${index}`] ? "block" : "none",
                 }}
                 className="px-4 pb-5 sm:px-6 sm:pb-6">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam at ante et libero rutrum lobortis. Donec posuere
-                  accumsan nunc vel fermentum. Mauris nec ex ultrices, pulvinar
-                  enim vitae, convallis turpis. Proin convallis diam nec lorem
-                  consectetur, non pharetra libero vestibulum. Vivamus
-                  scelerisque vestibulum urna, vel fermentum felis. Sed
-                  condimentum nec metus et cursus.
-                </p>
+                <p>{answerContent[index - 1]}</p>
               </div>
             </div>
           ))}
