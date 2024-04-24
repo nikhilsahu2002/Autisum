@@ -63,7 +63,7 @@ export const Navbar = () => {
             </ul>
             <div className="flex flex-col sm:flex-row sm:items-center gap-4  lg:min-w-max mt-10 lg:mt-0">
               <a
-                href="/Dignoes"
+                href="/test"
                 className="relative px-6 py-3 flex justify-center items-center bg-blue-600 text-white rounded-3xl transition ease-linear hover:bg-blue-800 focus:bg-blue-700">
                 <span className="relative">Get Started</span>
               </a>
