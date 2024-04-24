@@ -13,6 +13,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AutismQuiz from "./Components/AutismQuiz";
 import Blog from "./Pages/Blog";
 import AutisichTest from "./Components/AutisichTest";
+import Doctorpage from "./Pages/Doctorpage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/Blog" element={<Blog />} />
           <Route path="/BlogPost" element={<Blogpage />} />
           <Route path="/test" element={<AutisichTest />} />
+          <Route path="/consultancy" element={<Doctorpage />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
