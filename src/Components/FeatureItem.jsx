@@ -78,21 +78,21 @@ const features = [
     id: 1,
     title: "MRI Test Result",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto deserunt culpa autem",
+      "MRI scan reveals certain points in the brain that reflect autism, guiding personalized healthcare decisions.",
     icon: "task",
   },
   {
     id: 2,
     title: "Consultancy",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto deserunt culpa autem",
+      "We provide world best doctors for daignosis and provide online consultancies",
     icon: "euro-circle",
   },
   {
     id: 3,
     title: "Manual Dignose",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto deserunt culpa autem",
+      "Our website provides a questionnaire for manual testing to aid in further diagnosis",
     icon: "fire",
   },
 ];
