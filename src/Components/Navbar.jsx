@@ -55,7 +55,7 @@ export const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="/Test"
+                  href="/consultancy"
                   className="duration-300 ease-linear hover:text-blue-600 ">
                   Consultancy
                 </a>
@@ -125,9 +125,11 @@ export default function HeroSection() {
               <h1 className="text-blue-950  text-3xl/snug sm:text-5xl/tight lg:text-4xl/tight xl:text-[3.50rem]/tight font-bold">
                 Revolutionizing Autism Diagnosis with MRI Scanning Technology
               </h1>
-              <p className=" text-gray-700  lg:text-lg max-w-2xl lg:max-w-none mx-auto">
-              
-              </p>Revolutionizing Autism Diagnosis with MRI Scanning Technology" offers precise, early detection, revolutionizing intervention strategies and improving outcomes for autism spectrum disorders globally.
+              <p className=" text-gray-700  lg:text-lg max-w-2xl lg:max-w-none mx-auto"></p>
+              Revolutionizing Autism Diagnosis with MRI Scanning Technology"
+              offers precise, early detection, revolutionizing intervention
+              strategies and improving outcomes for autism spectrum disorders
+              globally.
               <form
                 action="#"
                 className="flex max-w-[34rem] mx-auto lg:mx-0 w-full lg:max-w-none relative  bg-gray-100  border border-blue-100 dark:border-gray-950 overflow-hidden p-0.5 rounded-3xl before:absolute before:inset-1 before:bg-blue-50 dark:before:bg-gray-950 before:rounded-[1.25rem]">

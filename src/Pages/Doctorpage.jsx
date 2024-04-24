@@ -13,7 +13,23 @@ export default function Doctorpage() {
       <h1 className=" text-5xl justify-center flex font-extrabold mb-5 p-20">
         Doctor consultancy
       </h1>
-      <Consult />
+      <div className="grid lg:grid-cols-3 place-items-center sm:grid-cols-1">
+        <Consult
+          imgurl="https://drnavdeepsharma.com/sir.jpg"
+          name="Dr. Navdeep Sharma"
+          dis="Dr. Navdeep Sharma, an esteemed Ayurvedic autism healer, has dedicated his career to aiding children with autism spectrum disorder. With over 22 years of experience, he utilizes Ayurvedic techniques to provide holistic therapy for conditions like autism, ADHD, OCD, and depression."
+        />
+        <Consult
+          imgurl="https://drnavdeepsharma.com/sir.jpg"
+          name="Dr. Navdeep Sharma"
+          dis="Dr. Navdeep Sharma, an esteemed Ayurvedic autism healer, has dedicated his career to aiding children with autism spectrum disorder. With over 22 years of experience, he utilizes Ayurvedic techniques to provide holistic therapy for conditions like autism, ADHD, OCD, and depression."
+        />
+        <Consult
+          imgurl="https://drnavdeepsharma.com/sir.jpg"
+          name="Dr. Navdeep Sharma"
+          dis="Dr. Navdeep Sharma, an esteemed Ayurvedic autism healer, has dedicated his career to aiding children with autism spectrum disorder. With over 22 years of experience, he utilizes Ayurvedic techniques to provide holistic therapy for conditions like autism, ADHD, OCD, and depression."
+        />
+      </div>
     </div>
   );
 }
