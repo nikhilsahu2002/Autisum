@@ -55,7 +55,7 @@ export const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/consultancy"
                   className="duration-300 ease-linear hover:text-blue-600 ">
                   consultancy
                 </a>
