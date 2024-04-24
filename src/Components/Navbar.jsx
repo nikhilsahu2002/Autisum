@@ -126,9 +126,8 @@ export default function HeroSection() {
                 Revolutionizing Autism Diagnosis with MRI Scanning Technology
               </h1>
               <p className=" text-gray-700  lg:text-lg max-w-2xl lg:max-w-none mx-auto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dignissimos, fugit! Laborum quo maxime at sapiente quasi
-              </p>
+              
+              </p>Revolutionizing Autism Diagnosis with MRI Scanning Technology" offers precise, early detection, revolutionizing intervention strategies and improving outcomes for autism spectrum disorders globally.
               <form
                 action="#"
                 className="flex max-w-[34rem] mx-auto lg:mx-0 w-full lg:max-w-none relative  bg-gray-100  border border-blue-100 dark:border-gray-950 overflow-hidden p-0.5 rounded-3xl before:absolute before:inset-1 before:bg-blue-50 dark:before:bg-gray-950 before:rounded-[1.25rem]">
