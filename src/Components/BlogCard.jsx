@@ -19,7 +19,7 @@ const BlogCard = ({ cover, published_date, category, author, title }) => {
         </div>
         <h1 className="text-xl my-6 font-semibold text-gray-900 ">{title}</h1>
         <a
-          href="#"
+          href="/blog"
           className="text-blue-600  transition hover:text-opacity-90 flex items-center gap-x-3 group">
           Read more
           <svg
