@@ -61,13 +61,6 @@ export const Navbar = () => {
                 </a>
               </li>
             </ul>
-            <div className="flex flex-col sm:flex-row sm:items-center gap-4  lg:min-w-max mt-10 lg:mt-0">
-              <a
-                href="/test"
-                className="relative px-6 py-3 flex justify-center items-center bg-blue-600 text-white rounded-3xl transition ease-linear hover:bg-blue-800 focus:bg-blue-700">
-                <span className="relative">Get Started</span>
-              </a>
-            </div>
           </div>
           <div className="flex items-center lg:hidden">
             <button
@@ -128,15 +121,6 @@ export default function HeroSection() {
               offers precise, early detection, revolutionizing intervention
               strategies and improving outcomes for autism spectrum disorders
               globally.
-              <form
-                action="#"
-                className="flex max-w-[34rem] mx-auto lg:mx-0 w-full lg:max-w-none relative  bg-gray-100  border border-blue-100 dark:border-gray-950 overflow-hidden p-0.5 rounded-3xl before:absolute before:inset-1 before:bg-blue-50 dark:before:bg-gray-950 before:rounded-[1.25rem]">
-                <input
-                  type="text"
-                  placeholder="johndoe@gmail.com"
-                  className="peer relative w-full bg-white dark:bg-gray-950 px-5 py-3 rounded-full outline-none text-gray-600 dark:text-gray-300"
-                />
-              </form>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-[34rem] mx-auto lg:mx-0 w-full">
                 <div className="relative text-center bg-white  border border-blue-100 dark:border-gray-950 p-5 rounded-3xl before:absolute before:inset-1 before:bg-blue-50 dark:before:bg-gray-950 before:rounded-[1.25rem]">
                   <span className="font-bold text-2xl text-gray-900 dark:text-gray-100 relative">
