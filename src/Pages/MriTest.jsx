@@ -27,10 +27,9 @@ export default function MriTest() {
           },
         },
       );
+      setShowDialog(true);
 
       setResult(response.data.result);
-
-      setShowDialog(true);
     } catch (err) {
       setError(err.message);
     }
@@ -89,13 +88,15 @@ export default function MriTest() {
               src={URL.createObjectURL(selectedFile)}
               className="mt-4 mx-auto max-h-40 block"
               id="preview"
-              alt="Selected Image"
             />
           )}
         </div>
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-          onClick={handleSubmit}>
+          onClick={() => {
+            handleSubmit();
+            // setShowDialog(true);
+          }}>
           Submit
         </button>
 

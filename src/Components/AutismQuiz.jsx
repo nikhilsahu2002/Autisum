@@ -81,7 +81,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q1"] === 2 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     Yes
                   </button>
                   <button
@@ -90,7 +90,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q1"] === 0 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     No
                   </button>
                   <button
@@ -99,7 +99,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q1"] === 1 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 p-2">
                     Sometimes
                   </button>
                 </div>
@@ -118,7 +118,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q2"] === 2 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     I enjoy them
                   </button>
                   <button
@@ -127,7 +127,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q2"] === 1 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     I prefer smaller settings
                   </button>
                   <button
@@ -136,7 +136,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q2"] === 0 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     I find them overwhelming
                   </button>
                 </div>
@@ -155,7 +155,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q3"] === 2 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     Yes, very sensitive
                   </button>
                   <button
@@ -164,7 +164,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q3"] === 1 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     Somewhat sensitive
                   </button>
                   <button
@@ -173,7 +173,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q3"] === 0 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 p-2">
                     No, not really
                   </button>
                 </div>
@@ -193,7 +193,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q4"] === 2 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     Yes, often
                   </button>
                   <button
@@ -202,7 +202,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q4"] === 1 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     Sometimes
                   </button>
                   <button
@@ -211,7 +211,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q4"] === 0 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 p-2">
                     No, not really
                   </button>
                 </div>
@@ -231,7 +231,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q5"] === 2 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     Yes, I need it
                   </button>
                   <button
@@ -240,7 +240,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q5"] === 1 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     I like some routine
                   </button>
                   <button
@@ -249,7 +249,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q5"] === 0 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 p-2">
                     I'm flexible with routines
                   </button>
                 </div>
@@ -268,7 +268,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q6"] === 2 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     I struggle with changes
                   </button>
                   <button
@@ -277,7 +277,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q6"] === 1 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     I adapt with some difficulty
                   </button>
                   <button
@@ -286,7 +286,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q6"] === 0 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 p-2">
                     I'm flexible and adapt easily
                   </button>
                 </div>
@@ -306,7 +306,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q7"] === 2 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     Yes, I have many interests
                   </button>
                   <button
@@ -315,7 +315,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q7"] === 1 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     I have a few specific interests
                   </button>
                   <button
@@ -324,7 +324,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q7"] === 0 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 p-2">
                     I have limited interests
                   </button>
                 </div>
@@ -344,7 +344,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q8"] === 2 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     Yes, frequently
                   </button>
                   <button
@@ -353,7 +353,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q8"] === 1 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     Sometimes, to a moderate extent
                   </button>
                   <button
@@ -362,7 +362,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q8"] === 0 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 p-2">
                     No, rarely
                   </button>
                 </div>
@@ -382,7 +382,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q9"] === 2 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     I feel anxious or upset
                   </button>
                   <button
@@ -391,7 +391,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q9"] === 1 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     I feel a bit unsettled
                   </button>
                   <button
@@ -400,7 +400,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q9"] === 0 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 p-2">
                     I don't mind changes
                   </button>
                 </div>
@@ -420,7 +420,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q10"] === 2 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     Yes, often
                   </button>
                   <button
@@ -429,7 +429,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q10"] === 1 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 mr-2 p-2">
                     Sometimes, to some extent
                   </button>
                   <button
@@ -438,7 +438,7 @@ function AutismQuiz() {
                       backgroundColor:
                         answers["q10"] === 0 ? "#4299e1" : "#6b7280",
                     }}
-                    className="text-white px-4 py-2 rounded hover:bg-blue-600">
+                    className="text-white px-4 py-2 rounded hover:bg-blue-600 p-2">
                     No, not really
                   </button>
                 </div>
