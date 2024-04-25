@@ -74,7 +74,7 @@ function AutismQuiz() {
                   Question 1: Do Your Child find it easy to make eye contact
                   during conversations?
                 </h3>
-                <div className="mt-2">
+                <div className="mt-2 gap-5">
                   <button
                     onClick={() => handleAnswer("q1", 2)}
                     style={{
@@ -111,7 +111,7 @@ function AutismQuiz() {
                   Question 2: How do Your Child feel about social gatherings or
                   events?
                 </h3>
-                <div className="mt-2">
+                <div className="mt-2  gap-5">
                   <button
                     onClick={() => handleAnswer("q2", 2)}
                     style={{
@@ -148,7 +148,7 @@ function AutismQuiz() {
                   Question 3: Are Your Child sensitive to loud noises or bright
                   lights?
                 </h3>
-                <div className="mt-2">
+                <div className="mt-2  gap-5">
                   <button
                     onClick={() => handleAnswer("q3", 2)}
                     style={{
@@ -186,7 +186,7 @@ function AutismQuiz() {
                   Question 4: Do Your Child have difficulty understanding
                   others' emotions?
                 </h3>
-                <div className="mt-2">
+                <div className="mt-2  gap-5">
                   <button
                     onClick={() => handleAnswer("q4", 2)}
                     style={{
@@ -224,7 +224,7 @@ function AutismQuiz() {
                   Question 5: Do Your Child prefer routine and predictability in
                   Your Childr daily life?
                 </h3>
-                <div className="mt-2">
+                <div className="mt-2  gap-5">
                   <button
                     onClick={() => handleAnswer("q5", 2)}
                     style={{
@@ -261,7 +261,7 @@ function AutismQuiz() {
                   Question 6: How do Your Child handle changes in plans or
                   unexpected events?
                 </h3>
-                <div className="mt-2">
+                <div className="mt-2  gap-5">
                   <button
                     onClick={() => handleAnswer("q6", 2)}
                     style={{
@@ -299,7 +299,7 @@ function AutismQuiz() {
                   Question 7: Are Your Child interested in a wide range of
                   topics or activities?
                 </h3>
-                <div className="mt-2">
+                <div className="mt-2  gap-5">
                   <button
                     onClick={() => handleAnswer("q7", 2)}
                     style={{
@@ -337,7 +337,7 @@ function AutismQuiz() {
                   Question 8: Do Your Child often engage in repetitive behaviors
                   or movements?
                 </h3>
-                <div className="mt-2">
+                <div className="mt-2  gap-5">
                   <button
                     onClick={() => handleAnswer("q8", 2)}
                     style={{
@@ -375,7 +375,7 @@ function AutismQuiz() {
                   Question 9: How do Your Child feel about changes in Your
                   Childr daily routine?
                 </h3>
-                <div className="mt-2">
+                <div className="mt-2  gap-5">
                   <button
                     onClick={() => handleAnswer("q9", 2)}
                     style={{
@@ -413,7 +413,7 @@ function AutismQuiz() {
                   Question 10: Do Your Child have difficulty recognizing social
                   cues or non-verbal communication?
                 </h3>
-                <div className="mt-2">
+                <div className="mt-2  ">
                   <button
                     onClick={() => handleAnswer("q10", 2)}
                     style={{

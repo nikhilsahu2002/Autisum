@@ -19,7 +19,7 @@ export default function MriTest() {
       formData.append("file", selectedFile);
 
       const response = await axios.post(
-        "http://localhost:8000/process_image/",
+        "https://python-assignment-2hzo.onrender.com/process_image/",
         formData,
         {
           headers: {
@@ -118,7 +118,7 @@ export default function MriTest() {
                 Close
               </button>
               <a
-                href="/"
+                href="/consultancy"
                 className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
                 Check Doctors
               </a>
