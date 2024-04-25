@@ -44,33 +44,36 @@ const BlogCard = ({ cover, published_date, category, author, title }) => {
 const posts = [
   {
     id: 1,
-    cover: "/images/working-on-housing-project.jpg",
+    cover: "https://autismawarenesscentre.com/wp-content/uploads/aaci-Receiving-an-Autism-Diagnosis-in-the-Teen-Years-74595223-1200x800.jpg",
     published_date: {
-      day: "10",
-      month: "May",
+      day: "20",
+      month: "April",
     },
     category: "categoryName",
     author: "John Doe",
-    title: "Here some good ways write type safe support attaque ",
+    title: "Receiving an Autism Diagnosis in the Teen Years",
   },
   {
     id: 2,
-    cover: "/images/working-on-housing-project.jpg",
+    cover: "https://autismawarenesscentre.com/wp-content/uploads/aaci-debreifing-blog-te-172103177-1200x800.jpg",
     published_date: {
-      day: "10",
-      month: "May",
+      day: "20",
+      month: "April",
     },
     category: "categoryName",
     author: "John Doe",
-    title: "Here some good ways write type safe support attaque ",
+    title: "What does it mean to debrief after an incident occurs?",
   },
   {
     id: 3,
-    cover: "/images/working-on-housing-project.jpg",
+    cover: "https://autismawarenesscentre.com/wp-content/uploads/AACI-Select-Insistence-on-Sameness-and-Routine-385815860-1200x790.jpg",
     published_date: {
-      day: "10",
-      month: "May",
+      day: "20",
+      month: "April",
     },
+    category: "categoryName",
+    author: "John Doe",
+    title: "Insistence on Sameness and Routine – Understanding a Hallmark Autism Trait",
   },
 ];
 
@@ -83,9 +86,7 @@ const BlogSection = () => {
             Our most recent Articles
           </h1>
           <p className="text-gray-700 ">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
-            perferendis eos amet eum repudiandae aspernatur mollitia quos
-            consectetur voluptatibus pariatur
+            Welcome to Autistic Brains Blog, your hub for insights and support on autism spectrum disorder. Explore articles, book reviews, and resources curated by a seasoned parent and advocate. Join our community to learn, share, and connect with others on the autism journey
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
