@@ -34,7 +34,7 @@ export const Navbar = () => {
                     absolute top-full left-0   py-8 lg:py-0 px-5 sm:px-10 md:px-12 lg:px-0 lg:border-none w-full lg:top-0 lg:relative lg:w-max lg:flex duration-300 ease-linear gap-x-6
                     ${
                       openNavbar
-                        ? "opacity-100 translate-y-0 visible"
+                        ? "opacity-100 translate-y-0 visible backdrop-blur-md"
                         : "translate-y-10  opacity-0 invisible lg:visible  lg:translate-y-0 lg:opacity-100"
                     }
                 `}>
@@ -71,32 +71,30 @@ export const Navbar = () => {
           </div>
           <div className="flex items-center lg:hidden">
             <button
-              onClick={() => {
-                toggleNavbar();
-              }}
+              onClick={toggleNavbar}
               aria-label="Toggle navbar"
-              className="outline-none border-l border-l-emerald-100  pl-3 relative py-3 children:flex">
+              className="outline-none p-3">
               <span
                 aria-hidden="true"
                 className={`
-                                    h-0.5 w-6 rounded bg-gray-800 transition duration-300
-                                    ${
-                                      openNavbar
-                                        ? "rotate-45 translate-y-[0.33rem]"
-                                        : ""
-                                    }
-                                `}
+        block h-1 w-6 rounded bg-gray-800 transition duration-300
+        ${
+          openNavbar
+            ? "transform rotate-45 -translate-y-1.5 transform-origin-center"
+            : ""
+        }
+      `}
               />
               <span
                 aria-hidden="true"
                 className={`
-                                    mt-2 h-0.5 w-6 rounded bg-gray-800  transition duration-300
-                                    ${
-                                      openNavbar
-                                        ? "-rotate-45 -translate-y-[0.33rem]"
-                                        : ""
-                                    }
-                                `}
+        block mt-1 h-1 w-6 rounded bg-gray-800 transition duration-300
+        ${
+          openNavbar
+            ? "transform -rotate-45 -translate-y-1.5 transform-origin-center"
+            : ""
+        }
+      `}
               />
             </button>
           </div>
