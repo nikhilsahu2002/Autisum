@@ -14,7 +14,8 @@ export default function AutisichTest() {
         <div className="h-20 w-3/5 bg-gradient-to-r from-[#488ad4] opacity-40 blur-2xl "></div>
       </div>
       <Navbar />
-      <div className="container grid lg:grid-cols-3 sm:grid-cols-1 pt-20 ml-20">
+
+      <div className="container grid lg:grid-cols-3 sm:grid-cols-1 pt-20">
         <div className="form flex justify-center p-10 ">
           <BackgroundBlogCard
             url={img}
