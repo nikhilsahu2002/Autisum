@@ -3,7 +3,7 @@ import axios from "axios";
 import Chronology from "../Components/Chronology";
 import { Link } from "react-router-dom";
 
-export default function MriTest() {
+export default function FaceTest() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
@@ -19,7 +19,7 @@ export default function MriTest() {
       formData.append("file", selectedFile);
 
       const response = await axios.post(
-        "http://localhost:8000/process_image/",
+        "http://localhost:8000/predict/",
         formData,
         {
           headers: {
@@ -28,8 +28,11 @@ export default function MriTest() {
         },
       );
       setShowDialog(true);
-
-      setResult(response.data.result);
+      setResult(
+        response.data.autistic
+          ? "The person is likely autistic."
+          : "The person is not likely autistic.",
+      );
     } catch (err) {
       setError(err.message);
     }
@@ -42,10 +45,10 @@ export default function MriTest() {
         <div className="h-20 w-3/5 bg-gradient-to-r from-[#488ad4] opacity-40 blur-2xl "></div>
       </div>
       <h1 className="text-blue-950 text-3xl/snug sm:text-5xl/tight lg:text-4xl/tight xl:text-[3.50rem]/tight font-bold flex justify-center">
-        MRI Test
+        Face Image Test
       </h1>
       <p className="text-center text-xl text-gray-600 mt-4">
-        Upload a brain MRI image for analysis or choose other image processing
+        Upload a face image for autism analysis or choose other image processing
         tasks:
       </p>
 
@@ -70,7 +73,6 @@ export default function MriTest() {
               src="https://www.svgrepo.com/show/357902/image-upload.svg"
               alt=""
             />
-
             <h3 className="mt-2 text-sm font-medium text-gray-900">
               <label htmlFor="fileInput" className="relative cursor-pointer">
                 <span>Drag and drop</span>
@@ -93,10 +95,7 @@ export default function MriTest() {
         </div>
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-          onClick={() => {
-            handleSubmit();
-            // setShowDialog(true);
-          }}>
+          onClick={handleSubmit}>
           Submit
         </button>
 
@@ -117,11 +116,11 @@ export default function MriTest() {
                 className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded mr-2">
                 Close
               </button>
-              <a
-                href="/consultancy"
+              <Link
+                to="/consultancy"
                 className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
                 Check Doctors
-              </a>
+              </Link>
             </div>
           </div>
         )}

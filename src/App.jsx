@@ -14,6 +14,7 @@ import AutismQuiz from "./Components/AutismQuiz";
 import Blog from "./Pages/Blog";
 import AutisichTest from "./Components/AutisichTest";
 import Doctorpage from "./Pages/Doctorpage";
+import FaceTest from "./Pages/FaceTest";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/mritest" element={<MriTest />} />
+          <Route path="/facetest" element={<FaceTest />} />
           <Route path="/selfdignoses" element={<AutismQuiz />} />
           <Route path="/Blog" element={<Blog />} />
           <Route path="/BlogPost" element={<Blogpage />} />
