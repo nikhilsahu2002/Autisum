@@ -19,7 +19,7 @@ export default function FaceTest() {
       formData.append("file", selectedFile);
 
       const response = await axios.post(
-        "http://localhost:8000/predict/",
+        "https://python-assignment-2hzo.onrender.com/predict/",
         formData,
         {
           headers: {
