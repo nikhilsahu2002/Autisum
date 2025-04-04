@@ -19,7 +19,8 @@ export default function FaceTest() {
       formData.append("file", selectedFile);
 
       const response = await axios.post(
-        "https://autisiumbackend.onrender.com/predict/",
+        // "https://autisiumbackend.onrender.com/predict/",
+        "http://44.202.254.142:8000/predict/",
         // "http://localhost:8000/predict/",
         formData,
         {
