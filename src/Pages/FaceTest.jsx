@@ -20,7 +20,7 @@ export default function FaceTest() {
 
       const response = await axios.post(
         // "https://autisiumbackend.onrender.com/predict/",
-        "http://44.202.254.142:8000/predict/",
+        "http://54.197.13.180:8000/predict/",
         // "http://localhost:8000/predict/",
         formData,
         {
