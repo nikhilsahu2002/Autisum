@@ -19,7 +19,7 @@ export default function MriTest() {
       formData.append("file", selectedFile);
 
       const response = await axios.post(
-        "http://54.197.13.180:8000/process_image/",
+        "https://autisiumbackend.onrender.com/process_image/",
         formData,
         {
           headers: {
