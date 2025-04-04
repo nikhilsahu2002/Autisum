@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function FaceTest() {
   const [selectedFile, setSelectedFile] = useState(null);
-  const [result, setResult] = useState(null);
+  const [result, setResult] = useState('');
   const [error, setError] = useState(null);
   const [showDialog, setShowDialog] = useState(false);
 
@@ -20,6 +20,7 @@ export default function FaceTest() {
 
       const response = await axios.post(
         "https://autisiumbackend.onrender.com/predict/",
+        // "http://localhost:8000/predict/",
         formData,
         {
           headers: {
@@ -28,11 +29,7 @@ export default function FaceTest() {
         },
       );
       setShowDialog(true);
-      setResult(
-        response.data.autistic
-          ? "The person is likely autistic."
-          : "The person is not likely autistic.",
-      );
+      setResult(response.data.autistic);
     } catch (err) {
       setError(err.message);
     }
@@ -109,6 +106,7 @@ export default function FaceTest() {
                   className="h-20 w-20"
                 />
               </div>
+              {console.log(result)}
               {result && <p className="mt-4">{result}</p>}
 
               <button
