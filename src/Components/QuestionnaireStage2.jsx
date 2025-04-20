@@ -73,7 +73,7 @@ const QuestionnaireStage2 = () => {
 
     const handleSubmit = async () => {
         try {
-            const response = await axios.post('"https://nikhil.sbs/stage_2_test/', {
+            const response = await axios.post('https://nikhil.sbs/stage_2_test/', {
                 input_data: Object.values(answers),
             });
             setResult(response.data.predicted_disease); // Set the result from the server
