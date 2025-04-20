@@ -16,6 +16,41 @@ const iconRender = (val) => {
           />
         </svg>
       );
+    case "form":
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M6 9h12M6 13.5h12M6 18h12M9 6h6m0-3H9a3 3 0 00-3 3v18a3 3 0 003 3h6a3 3 0 003-3V6a3 3 0 00-3-3z"
+          />
+        </svg>
+      );
+    case "face":
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15 9.75h.008v.008H15V9.75zm-6 0h.008v.008H9V9.75zM12 17.25c-1.25 0-2.45-.63-3.2-1.69a.75.75 0 111.2-.88 2.75 2.75 0 004 0 .75.75 0 111.2.88A4.75 4.75 0 0112 17.25zM21 12c0 5.523-4.477 10-10 10S1 17.523 1 12 5.477 2 11 2s10 4.477 10 10z"
+          />
+        </svg>
+      );
+
     case "euro-circle":
       return (
         <svg
@@ -76,25 +111,32 @@ const FeatureItem = ({ title, description, icon }) => {
 const features = [
   {
     id: 1,
+    title: "Stage-wise Manual Diagnosis",
+    description:
+      "Answer stage-based questionnaires to assess autism risk manually. Each stage deepens the analysis.",
+    icon: "form",
+  },
+  {
+    id: 2,
+    title: "Facial Image Test",
+    description:
+      "We use advanced image analysis techniques to assess facial features and detect signs of autism.",
+    icon: "face", // Assuming "face" is the icon you added
+  },
+  {
+    id: 3,
     title: "MRI Test Result",
     description:
       "MRI scan reveals certain points in the brain that reflect autism, guiding personalized healthcare decisions.",
     icon: "task",
   },
   {
-    id: 2,
+    id: 4,
     title: "Consultancy",
     description:
       "We provide world best doctors for daignosis and provide online consultancies",
     icon: "euro-circle",
-  },
-  {
-    id: 3,
-    title: "Manual Dignose",
-    description:
-      "Our website provides a questionnaire for manual testing to aid in further diagnosis",
-    icon: "fire",
-  },
+  }
 ];
 const Features = () => {
   return (
