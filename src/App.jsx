@@ -15,6 +15,8 @@ import Blog from "./Pages/Blog";
 import AutisichTest from "./Components/AutisichTest";
 import Doctorpage from "./Pages/Doctorpage";
 import FaceTest from "./Pages/FaceTest";
+import Questionnaire from "./Components/Questionnaire";
+import QuestionnaireStage2 from "./Components/QuestionnaireStage2";
 
 function App() {
   return (
@@ -22,13 +24,14 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/mritest" element={<MriTest />} />
-          <Route path="/facetest" element={<FaceTest />} />
-          <Route path="/selfdignoses" element={<AutismQuiz />} />
+          <Route path="/Diagnose/mritest" element={<MriTest />} />
+          <Route path="/Diagnose/facetest" element={<FaceTest />} />
+          {/* <Route path="/selfdignoses" element={<AutismQuiz />} /> */}
           <Route path="/Blog" element={<Blog />} />
           <Route path="/BlogPost" element={<Blogpage />} />
-          <Route path="/test" element={<AutisichTest />} />
           <Route path="/consultancy" element={<Doctorpage />} />
+          <Route path="/Diagnose/questionnaire_stage_1" element={<Questionnaire />} />
+          <Route path="/Diagnose/questionnaire_stage_2" element={<QuestionnaireStage2 />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>

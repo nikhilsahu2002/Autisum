@@ -54,12 +54,12 @@ function AutismQuiz() {
         <h1 className=" text-5xl justify-center flex font-extrabold mb-5 p-5">
           Autism Diagnosis Test
         </h1>
-        <div class="grid lg:grid-cols-2 sm:grid-cols-1  gap-4">
+        <div className="grid lg:grid-cols-2 sm:grid-cols-1  gap-4">
           <div className="ml-5 ">
-            <p class="mb-3 text-lg text-gray-500 md:text-xl ">
+            <p className="mb-3 text-lg text-gray-500 md:text-xl ">
               Answer the following questions to assess Your Childr autism traits
             </p>
-            <p class="text-gray-500 ">
+            <p className="text-gray-500 ">
               The autism detection form offers a structured approach to
               assessing potential autism traits. Carefully crafted questions
               cover key areas such as social interaction, communication skills,

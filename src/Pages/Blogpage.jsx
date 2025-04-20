@@ -5,17 +5,17 @@ export default function Blogpage() {
   return (
     <div>
       <Navbar />
-      <div class="text-center pt-16 md:pt-32">
-        <p class="text-sm md:text-base text-green-500 font-bold">
-          04 AUGUST 2023 <span class="text-gray-900">/</span> GETTING STARTED
+      <div className="text-center pt-16 md:pt-32">
+        <p className="text-sm md:text-base text-green-500 font-bold">
+          04 AUGUST 2023 <span className="text-gray-900">/</span> GETTING STARTED
         </p>
-        <h1 class="font-bold break-normal text-3xl md:text-5xl">
+        <h1 className="font-bold break-normal text-3xl md:text-5xl">
           Welcome to Ghostwind CSS
         </h1>
       </div>
       {/* <!--image--> */}
       <div
-        class="container w-full max-w-6xl mx-auto bg-white bg-cover mt-8 rounded"
+        className="container w-full max-w-6xl mx-auto bg-white bg-cover mt-8 rounded"
         style={{
           backgroundImage:
             "url('https://source.unsplash.com/collection/1118905/')",
@@ -23,46 +23,46 @@ export default function Blogpage() {
         }}></div>
       {/* 	
 	<!--Container--> */}
-      <div class="container max-w-5xl mx-auto -mt-32">
-        <div class="mx-0 sm:mx-6">
+      <div className="container max-w-5xl mx-auto -mt-32">
+        <div className="mx-0 sm:mx-6">
           <div
-            class="bg-white w-full p-8 md:p-24 text-xl md:text-2xl text-gray-800 leading-normal"
+            className="bg-white w-full p-8 md:p-24 text-xl md:text-2xl text-gray-800 leading-normal"
             style={{ fontFamily: "Georgia,serif" }}>
             {/* <!--Post Content-->
 				
 
 				<!--Lead Para--> */}
-            <p class="text-2xl md:text-3xl mb-5">
+            <p className="text-2xl md:text-3xl mb-5">
               Welcome fellow{" "}
               <a
-                class="text-gray-800 hover:text-green-500 no-underline border-b-2 border-green-500"
+                className="text-gray-800 hover:text-green-500 no-underline border-b-2 border-green-500"
                 href="https://www.tailwindcss.com">
                 Tailwind CSS
               </a>{" "}
               and{" "}
               <a
-                class="text-gray-800 hover:text-green-500 no-underline border-b-2 border-green-500"
+                className="text-gray-800 hover:text-green-500 no-underline border-b-2 border-green-500"
                 href="https://www.ghost.org">
                 Ghost
               </a>{" "}
               fan. This starter template is an attempt to replicate the default
               Ghost theme{" "}
               <a
-                class="text-gray-800 hover:text-green-500 no-underline border-b-2 border-green-500"
+                className="text-gray-800 hover:text-green-500 no-underline border-b-2 border-green-500"
                 href="https://demo.ghost.io/welcome">
                 "Casper"
               </a>{" "}
               using Tailwind CSS and vanilla Javascript.
             </p>
 
-            <p class="py-6">
+            <p className="py-6">
               The basic blog page layout is available and all using the default
               Tailwind CSS classes (although there are a few hardcoded style
               tags). If you are going to use this in your project, you will want
               to convert the classes into components.
             </p>
 
-            <p class="py-6">
+            <p className="py-6">
               Sed dignissim lectus ut tincidunt vulputate. Fusce tincidunt lacus
               purus, in mattis tortor sollicitudin pretium. Phasellus at diam
               posuere, scelerisque nisl sit amet, tincidunt urna. Cras nisi
@@ -78,14 +78,14 @@ export default function Blogpage() {
             </p>
 
             <ol>
-              <li class="py-3">
+              <li className="py-3">
                 Maecenas accumsan lacus sit amet elementum porta. Aliquam eu
                 libero lectus. Fusce vehicula dictum mi. In non dolor at sem
                 ullamcorper venenatis ut sed dui. Ut ut est quam. Suspendisse
                 quam quam, commodo sit amet placerat in, interdum a ipsum. Morbi
                 sit amet tellus scelerisque tortor semper posuere.
               </li>
-              <li class="py-3">
+              <li className="py-3">
                 Morbi varius posuere blandit. Praesent gravida bibendum neque
                 eget commodo. Duis auctor ornare mauris, eu accumsan odio
                 viverra in. Proin sagittis maximus pharetra. Nullam lorem
@@ -93,7 +93,7 @@ export default function Blogpage() {
                 quam eget ipsum luctus hendrerit. Ut eros magna, eleifend ac
                 ornare vulputate, pretium nec felis.
               </li>
-              <li class="py-3">
+              <li className="py-3">
                 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
                 posuere cubilia Curae; Nunc vitae pretium elit. Cras leo mauris,
                 tristique in risus ac, tristique rutrum velit. Mauris accumsan
@@ -103,15 +103,15 @@ export default function Blogpage() {
               </li>
             </ol>
 
-            <blockquote class="border-l-4 border-green-500 italic my-8 pl-8 md:pl-12">
+            <blockquote className="border-l-4 border-green-500 italic my-8 pl-8 md:pl-12">
               Crocodiles are easy. They try to kill and eat you. People are
               harder. Sometimes they pretend to be your friend first.
               <br /> - Steve Irwin
             </blockquote>
 
-            <p class="py-6">What's the output?</p>
-            <pre class="bg-gray-900 rounded text-white font-mono text-base p-4">
-              <code class="break-words whitespace-pre-wrap">
+            <p className="py-6">What's the output?</p>
+            <pre className="bg-gray-900 rounded text-white font-mono text-base p-4">
+              <code className="break-words whitespace-pre-wrap">
                 let a = 3; let b = new Number(3); let c = 3; console.log(a ==
                 b); console.log(a === b); console.log(b === c);
               </code>
@@ -121,24 +121,24 @@ export default function Blogpage() {
           </div>
 
           {/* <!--Subscribe-->	 */}
-          <div class="container font-sans bg-green-100 rounded mt-8 p-4 md:p-24 text-center">
-            <h2 class="font-bold break-normal text-2xl md:text-4xl">
+          <div className="container font-sans bg-green-100 rounded mt-8 p-4 md:p-24 text-center">
+            <h2 className="font-bold break-normal text-2xl md:text-4xl">
               Subscribe to Ghostwind CSS
             </h2>
-            <h3 class="font-bold break-normal  text-gray-600 text-base md:text-xl">
+            <h3 className="font-bold break-normal  text-gray-600 text-base md:text-xl">
               Get the latest posts delivered right to your inbox
             </h3>
-            <div class="w-full text-center pt-4">
+            <div className="w-full text-center pt-4">
               <form action="#">
-                <div class="max-w-sm mx-auto p-1 pr-0 flex flex-wrap items-center">
+                <div className="max-w-sm mx-auto p-1 pr-0 flex flex-wrap items-center">
                   <input
                     type="email"
                     placeholder="youremail@example.com"
-                    class="flex-1 appearance-none rounded shadow p-3 text-gray-600 mr-2 focus:outline-none"
+                    className="flex-1 appearance-none rounded shadow p-3 text-gray-600 mr-2 focus:outline-none"
                   />
                   <button
                     type="submit"
-                    class="flex-1 mt-4 md:mt-0 block md:inline-block appearance-none bg-green-500 text-white text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:bg-green-400">
+                    className="flex-1 mt-4 md:mt-0 block md:inline-block appearance-none bg-green-500 text-white text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:bg-green-400">
                     Subscribe
                   </button>
                 </div>
@@ -148,26 +148,26 @@ export default function Blogpage() {
           {/* <!-- /Subscribe--> */}
 
           {/* <!--Author--> */}
-          <div class="flex w-full items-center font-sans p-8 md:p-24">
+          <div className="flex w-full items-center font-sans p-8 md:p-24">
             <img
-              class="w-10 h-10 rounded-full mr-4"
+              className="w-10 h-10 rounded-full mr-4"
               src="http://i.pravatar.cc/300"
               alt="Avatar of Author"
             />
-            <div class="flex-1">
-              <p class="text-base font-bold md:text-xl leading-none">
+            <div className="flex-1">
+              <p className="text-base font-bold md:text-xl leading-none">
                 Ghostwind CSS
               </p>
-              <p class="text-gray-600 text-xs md:text-base">
+              <p className="text-gray-600 text-xs md:text-base">
                 Tailwind CSS version of Ghost's Casper theme by{" "}
                 <a
-                  class="text-gray-800 hover:text-green-500 no-underline border-b-2 border-green-500"
+                  className="text-gray-800 hover:text-green-500 no-underline border-b-2 border-green-500"
                   href="https://www.tailwindtoolbox.com">
                   TailwindToolbox.com
                 </a>
               </p>
             </div>
-            <div class="justify-end"></div>
+            <div className="justify-end"></div>
             {/* <!--/Author--> */}
           </div>
         </div>

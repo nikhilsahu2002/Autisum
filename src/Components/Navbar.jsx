@@ -41,7 +41,7 @@ export const Navbar = () => {
             <ul className="flex flex-col lg:flex-row gap-6 lg:items-center text-gray-700  lg:w-full lg:justify-center">
               <li>
                 <a
-                  href="/Test"
+                  href="/Diagnose/questionnaire_stage_1"
                   className="duration-300 ease-linear hover:text-blue-600 ">
                   Diagnose
                 </a>
