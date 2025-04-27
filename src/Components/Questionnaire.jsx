@@ -70,7 +70,7 @@ const Questionnaire = () => {
 
     const handleSubmit = async () => {
         try {
-            const response = await axios.post('http://nikhil.sbs/stage_1_test/', {
+            const response = await axios.post('https://nikhil.sbs/stage_1_test/', {
                 input_data: Object.values(answers),
             });
             console.log(response)

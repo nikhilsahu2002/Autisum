@@ -150,7 +150,7 @@ const QuestionnaireStage2 = () => {
 
                     <div className="bg-gray-50 p-6 rounded-lg shadow-inner border border-blue-100">
                         <h2 className="text-xl font-semibold text-blue-600 mb-3">
-                            Stage 1: Initial Screening
+                            Stage 1: Final Screening
                         </h2>
                         <p className="text-lg font-medium text-gray-700 mb-4">
                             {currentQuestion.meaning} <span className="text-gray-500">({currentQuestion.abbreviation})</span>
