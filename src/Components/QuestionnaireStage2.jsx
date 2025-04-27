@@ -122,10 +122,10 @@ const QuestionnaireStage2 = () => {
                             Go Back
                         </button>
                         <button
-                            onClick={() => navigate('/Diagnose/questionnaire_stage_2')}
+                            onClick={() => navigate('/Diagnose/facetest')}
                             className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-xl shadow-md"
                         >
-                            Stage 2
+                            Face Test
                         </button>
                     </div>
                 </div>
