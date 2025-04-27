@@ -43,7 +43,6 @@ const questions = [
     { abbreviation: 'SA', meaning: 'Does the child have trouble understanding social cues or interactions?', category: 'Behavioral' },
     { abbreviation: 'TM', meaning: 'Was there a delay in the child reaching talking milestones?', category: 'Developmental' }
 ];
-
 const QuestionnaireStage2 = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [answers, setAnswers] = useState({});
@@ -76,7 +75,10 @@ const QuestionnaireStage2 = () => {
             const response = await axios.post('https://nikhil.sbs/stage_2_test/', {
                 input_data: Object.values(answers),
             });
-            setResult(response.data.predicted_disease); // Set the result from the server
+            console.log(response)
+            console.log(response.data.predicted_disease)
+            console.log(response.data.prediction_probabilities)
+            setResult(response.data.predicted_disease);
         } catch (error) {
             console.error('Error predicting disease:', error);
         }
@@ -85,10 +87,32 @@ const QuestionnaireStage2 = () => {
     if (result) {
         return (
             <div className="flex justify-center items-center min-h-screen bg-gray-100">
-                <div className="w-full max-w-xl bg-white rounded-2xl shadow-2xl p-8">
+                <div className="w-full max-w-xl bg-white rounded-2xl shadow-2xl p-8" style={{ maxWidth: "51rem" }}>
                     <h2 className="text-2xl font-bold text-center mb-6">Predicted Disease</h2>
                     <div className="bg-gray-50 p-6 rounded-lg shadow-inner">
-                        <p className="text-lg font-semibold mb-4">The predicted disease is: {result}</p>
+                        <p className="text-lg font-semibold mb-4">The predicted disease is: {result.predicted_disease}</p>
+                        {result.prediction_probabilities && (
+                            <div className="mt-6">
+                                <h3 className="text-lg font-semibold">Prediction Probabilities:</h3>
+                                <div className="space-y-4 mt-4">
+                                    {Object.keys(result.prediction_probabilities).map((key, index) => {
+                                        const probability = result.prediction_probabilities[key] * 100;
+                                        return (
+                                            <div key={index} className="flex items-center space-x-4">
+                                                <span className="text-gray-700">{key}</span>
+                                                <div className="w-full bg-gray-200 rounded-full h-2.5">
+                                                    <div
+                                                        className="bg-green-500 h-2.5 rounded-full"
+                                                        style={{ width: `${probability}%` }}
+                                                    ></div>
+                                                </div>
+                                                <span className="text-gray-700 font-semibold">{probability.toFixed(2)}%</span>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        )}
                     </div>
                     <div className="mt-6 flex justify-center gap-4">
                         <button
@@ -98,10 +122,10 @@ const QuestionnaireStage2 = () => {
                             Go Back
                         </button>
                         <button
-                            onClick={() => navigate('/Diagnose/facetest')}
+                            onClick={() => navigate('/Diagnose/questionnaire_stage_2')}
                             className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-xl shadow-md"
                         >
-                            Face Test 
+                            Stage 2
                         </button>
                     </div>
                 </div>
@@ -114,32 +138,24 @@ const QuestionnaireStage2 = () => {
     return (
         <>
             <Navbar />
-            <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-indigo-100 to-blue-50 py-10 px-4">
+            <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-blue-50 to-purple-100 py-10">
                 <div className="w-full max-w-2xl bg-white rounded-2xl shadow-2xl p-8">
-                    {/* Main Heading */}
                     <h1 className="text-3xl font-extrabold text-center text-blue-700 mb-4">
                         Autism & Neurological Disorder Screening
                     </h1>
-
-                    {/* Subtext Description */}
-                    <p className="text-center text-gray-600 mb-6 text-md">
-                        This is <span className="font-semibold text-blue-700">Stage 2</span> of our disorder detection process.
-                        At this point, we're taking a closer look based on your earlier responses to identify more specific patterns
-                        related to neurodevelopmental or behavioral conditions. Please continue to answer thoughtfully — your input
-                        plays a vital role in guiding the next steps of care and evaluation.
+                    <p className="text-center text-gray-600 text-md mb-6">
+                        This brief questionnaire helps us identify early signs of neurological or developmental disorders.
+                        Please answer honestly and to the best of your knowledge. Your responses are confidential.
                     </p>
 
-
-                    {/* Question Block */}
                     <div className="bg-gray-50 p-6 rounded-lg shadow-inner border border-blue-100">
                         <h2 className="text-xl font-semibold text-blue-600 mb-3">
-                            Stage 2: Intermediate Screening
+                            Stage 1: Initial Screening
                         </h2>
-                        <p className="text-lg font-medium text-gray-800 mb-4">
+                        <p className="text-lg font-medium text-gray-700 mb-4">
                             {currentQuestion.meaning} <span className="text-gray-500">({currentQuestion.abbreviation})</span>
                         </p>
 
-                        {/* Radio Options */}
                         <div className="flex justify-around text-lg">
                             <label className="cursor-pointer flex items-center space-x-2">
                                 <input
@@ -167,26 +183,22 @@ const QuestionnaireStage2 = () => {
                         </div>
                     </div>
 
-                    {/* Next/Submit Button */}
                     <div className="mt-8 text-center">
                         <button
                             onClick={handleNext}
                             className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-xl shadow-lg transition-all duration-200"
                         >
-                            {currentIndex === questions.length - 1 ? 'Submit Responses' : 'Next Question'}
+                            {currentIndex === questions.length - 1 ? 'Submit Answers' : 'Next Question'}
                         </button>
                     </div>
 
-                    {/* Disclaimer or Note */}
-                    <p className="mt-6 text-sm text-gray-500 text-center italic">
-                        Note: This is an Intermediate screening and not a professional diagnosis. Please consult a certified specialist for a comprehensive evaluation.
+                    <p className="mt-6 text-sm text-gray-500 text-center">
+                        Please note: This is not a diagnosis. For medical concerns, consult a healthcare professional.
                     </p>
                 </div>
             </div>
             <FooterBlock />
         </>
-
     );
 };
-
 export default QuestionnaireStage2;

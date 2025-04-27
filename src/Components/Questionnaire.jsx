@@ -3,7 +3,6 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { Navbar } from './Navbar';
 import FooterBlock from './FooterBlock';
-
 const questions = [
     { abbreviation: 'MW', meaning: 'Does the child show signs of muscle weakness?', category: 'Muscular' },
     { abbreviation: 'LT', meaning: 'Does the child have low muscle tone (hypotonia)?', category: 'Muscular' },
@@ -46,6 +45,7 @@ const Questionnaire = () => {
     const [answers, setAnswers] = useState({});
     const [isAnswered, setIsAnswered] = useState(false);
     const [result, setResult] = useState(null); // Store the predicted disease result
+    const [predictionProbabilities, setPredictionProbabilities] = useState(null);
     const navigate = useNavigate();
 
     const handleChange = (value) => {
@@ -70,10 +70,14 @@ const Questionnaire = () => {
 
     const handleSubmit = async () => {
         try {
-            const response = await axios.post('https://nikhil.sbs/stage_1_test/', {
+            const response = await axios.post('http://nikhil.sbs/stage_1_test/', {
                 input_data: Object.values(answers),
             });
-            setResult(response.data.predicted_disease); // Set the result from the server
+            console.log(response)
+            console.log(response.data.predicted_disease)
+            console.log(response.data.prediction_probabilities)
+            setResult(response.data.predicted_disease);
+            setPredictionProbabilities(response.data.prediction_probabilities);
         } catch (error) {
             console.error('Error predicting disease:', error);
         }
@@ -82,10 +86,32 @@ const Questionnaire = () => {
     if (result) {
         return (
             <div className="flex justify-center items-center min-h-screen bg-gray-100">
-                <div className="w-full max-w-xl bg-white rounded-2xl shadow-2xl p-8">
+                <div className="w-full max-w-xl bg-white rounded-2xl shadow-2xl p-8" style={{maxWidth: "51rem"}}>
                     <h2 className="text-2xl font-bold text-center mb-6">Predicted Disease</h2>
                     <div className="bg-gray-50 p-6 rounded-lg shadow-inner">
-                        <p className="text-lg font-semibold mb-4">The predicted disease is: {result}</p>
+                        <p className="text-lg font-semibold mb-4">The predicted disease is: {result.predicted_disease}</p>
+                        {result.prediction_probabilities && (
+                            <div className="mt-6">
+                                <h3 className="text-lg font-semibold">Prediction Probabilities:</h3>
+                                <div className="space-y-4 mt-4">
+                                    {Object.keys(result.prediction_probabilities).map((key, index) => {
+                                        const probability = result.prediction_probabilities[key] * 100;
+                                        return (
+                                            <div key={index} className="flex items-center space-x-4">
+                                                <span className="text-gray-700">{key}</span>
+                                                <div className="w-full bg-gray-200 rounded-full h-2.5">
+                                                    <div
+                                                        className="bg-green-500 h-2.5 rounded-full"
+                                                        style={{ width: `${probability}%` }}
+                                                    ></div>
+                                                </div>
+                                                <span className="text-gray-700 font-semibold">{probability.toFixed(2)}%</span>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        )}
                     </div>
                     <div className="mt-6 flex justify-center gap-4">
                         <button
@@ -98,7 +124,7 @@ const Questionnaire = () => {
                             onClick={() => navigate('/Diagnose/questionnaire_stage_2')}
                             className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-xl shadow-md"
                         >
-                           Stage 2
+                            Stage 2
                         </button>
                     </div>
                 </div>
